@@ -9,4 +9,5 @@
 html<table><tr><td style="color:#ff7834">Текст</td></tr></table>
 ```
 Пример рабочего кода без кавычек:
+
 <table><tr><td style="color:#FFD700">Текст</td></tr></table>
