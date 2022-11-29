@@ -16,6 +16,41 @@
 ```
 Цитаты оформляются как в емейлах, с помощью символа `>`.
 ```
+Пример:
+
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> id sem consectetuer libero luctus adipiscing.
+
+Или более ленивым способом:
+```
+Знак `>` ставится перед каждым элементом цитаты, будь то абзац, заголовок или пустая строка
+```
+Пример:
+
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.
+
+```
+В цитаты можно помещать всё что угодно, в том числе вложенные цитаты:
+```
+> ## This is a header.
+>
+> 1. This is the first list item.
+> 2. This is the second list item.
+>This is a header.
+>
+>>Вложенная цитата.
+>
+>Here's some example code:
+>
+>return shell_exec("echo $input | $markdown
+_script");
+>
 
 ## Как добавить картинки
 Чтобы добавить изображения в разметку MarkDown, используйте следующую конструкцию:
