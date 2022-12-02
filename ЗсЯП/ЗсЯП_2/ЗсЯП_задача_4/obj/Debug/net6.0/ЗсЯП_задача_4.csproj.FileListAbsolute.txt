@@ -1,0 +1,15 @@
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\bin\Debug\net6.0\ЗсЯП_задача_4.exe
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\bin\Debug\net6.0\ЗсЯП_задача_4.deps.json
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\bin\Debug\net6.0\ЗсЯП_задача_4.runtimeconfig.json
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\bin\Debug\net6.0\ЗсЯП_задача_4.dll
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\bin\Debug\net6.0\ЗсЯП_задача_4.pdb
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.AssemblyInfo.cs
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.dll
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\refint\ЗсЯП_задача_4.dll
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.pdb
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ЗсЯП_задача_4.genruntimeconfig.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_2\ЗсЯП_задача_4\obj\Debug\net6.0\ref\ЗсЯП_задача_4.dll
