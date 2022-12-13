@@ -1,17 +1,7 @@
 ﻿namespace Common;
-public static int max2 (int a, int b)
+public static class SystemCoordinate
 {
-    if (a > b)
-    {
-        return a;
-    }
-    else
-    {
-        return b;
-    }
-}
-
-public static int GetNumberOfQuarter(int x, int y)
+    public static int GetNumberOfQuarter(int x, int y)
     {
         if (x > 0 && y > 0)
         {
@@ -35,3 +25,4 @@ public static int GetNumberOfQuarter(int x, int y)
 
         return -1;
     }
+}
