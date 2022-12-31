@@ -1,0 +1,15 @@
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\bin\Debug\net6.0\ЗсЯП_задача_2.exe
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\bin\Debug\net6.0\ЗсЯП_задача_2.deps.json
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\bin\Debug\net6.0\ЗсЯП_задача_2.runtimeconfig.json
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\bin\Debug\net6.0\ЗсЯП_задача_2.dll
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\bin\Debug\net6.0\ЗсЯП_задача_2.pdb
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.AssemblyInfo.cs
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.dll
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\refint\ЗсЯП_задача_2.dll
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.pdb
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ЗсЯП_задача_2.genruntimeconfig.cache
+C:\Users\user\OneDrive\Рабочий стол\Учёба\Курсы\GitGroup\ЗсЯП\ЗсЯП_9\Домашка\ЗсЯП_задача_2\obj\Debug\net6.0\ref\ЗсЯП_задача_2.dll
