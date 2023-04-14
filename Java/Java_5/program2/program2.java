@@ -3,7 +3,6 @@ package Java.Java_5.program2;
 import java.util.*;
 
 public class program2 {
-   
     public static void main(String[] args) {
         String[] employees = new String[] {"Иван Иванов", "Иван Петров", "Сергей Козлов", "Евгений Петров", "Сергей Васильев", "Иван Смирнов", "Андрей Петров"};
         ArrayList<String> employeesName = getName(employees);
@@ -22,6 +21,7 @@ public class program2 {
         }
         return listName;
     }
+
     public static Map<String, Integer> getMap(ArrayList<String> name) {
         Map<String, Integer> mapName = new HashMap<>();
         for (int i = 0; i < name.size(); i++) {
@@ -33,11 +33,13 @@ public class program2 {
         }
         return mapName;
     }
+
     public static void nameRepeat(Map<String, Integer> map){
         for(var item: map.entrySet()){
             if (item.getValue() > 1) System.out.printf("%s: %d \n", item.getKey(), item.getValue());
         }
     }
+
     public static void sortName(Map<String, Integer> map){
         ArrayList<Integer> listCount = new ArrayList<>();
         for(var item: map.entrySet()) {
