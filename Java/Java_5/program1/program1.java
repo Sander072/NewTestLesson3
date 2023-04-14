@@ -2,8 +2,7 @@ package Java.Java_5.program1;
 
 import java.util.*;
 
-public class program1{
-    
+public class program1{   
     public static void main(String[] args) {
         Map<String, ArrayList<Integer>> bookPhone = new HashMap<>();
         addNumber("Dorofeev", 1, bookPhone);
