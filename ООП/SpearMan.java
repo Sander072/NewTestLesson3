@@ -1,5 +1,3 @@
-package ООП;
-
 public class SpearMan extends Hero {
     public SpearMan( String name, int strength, int health ) {
         super( name, strength, health );

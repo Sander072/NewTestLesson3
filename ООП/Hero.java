@@ -1,6 +1,4 @@
-package ООП;
-
-public abstract class Hero {
+public abstract class Hero implements Interface {
     protected String name;
 
     protected int strength;
@@ -10,7 +8,6 @@ public abstract class Hero {
 
     protected int health;
     protected int healthMax;
-
 
     public Hero(String name,
                     int strength, int dexterity, int intelligence, int endurance,
@@ -27,40 +24,44 @@ public abstract class Hero {
     }
 
     public Hero( String name, int strength, int health ) {
-        this.name         = name;
-        this.strength     = strength;
-        this.health       = health;
-        this.healthMax    = health;
+        this(
+            name,
+            strength,
+            0,
+            0,
+            0,
+            health,
+            health );
     }
 
-    public String getName()      { return name; }
+    public Hero() {
+        this( "unknown", 1, 0, 0, 0, 5, 5 );
+    }
 
+
+    @Override
+    public String getName()      { return name; }
     public int getStrength()     { return strength; }
     public int getDexterity()    { return dexterity; }
     public int getIntelligence() { return intelligence; }
     public int getEndurance()    { return endurance; }
-
     public int getHealth()       { return health; }
     public int getHealthMax()    { return healthMax; }
 
-
     public void setName(         String name )      { this.name         = name; }
-
     public void setStrength(     int strength )     { this.strength     = strength; }
     public void setDexterity(    int dexterity )    { this.dexterity    = dexterity; }
     public void setIntelligence( int intelligence ) { this.intelligence = intelligence; }
     public void setEndurance(    int endurance )    { this.endurance    = endurance; }
-
     public void setHealth(       int health )       { this.health       = health; }
     public void setHealthMax(    int health )       { this.healthMax    = health; }
 
-    // Умер
+
     public void die() {
         setHealth( 0 );
         setHealthMax( 0 );
     }
 
-    // Ранен
     public void takeDamage( int damage ) {
         if ( this.health > damage ) {
             this.health -= damage;
@@ -71,7 +72,6 @@ public abstract class Hero {
         }
     }
 
-    // Атакует
     public void attack( Hero target ) {
         int damage = this.strength * 1;
         target.takeDamage( damage );
@@ -79,7 +79,6 @@ public abstract class Hero {
 
     }
 
-    // Лечится, не больше максимума
     public void rest( int hp ) {
         this.health = this.health + hp > this.healthMax ? this.healthMax : hp + this.health;
         System.out.println( this.name + " rests and recovers " + hp + " health points." );

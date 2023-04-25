@@ -1,5 +1,3 @@
-package ООП;
-
 public class Peasant extends Hero {
     public Peasant( String name, int strength, int health ) {
         super( name, strength, health );

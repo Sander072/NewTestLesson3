@@ -1,5 +1,3 @@
-package ООП;
-
 public class Sniper extends Hero {
     public Sniper( String name, int strength, int health ) {
         super( name, strength, health );

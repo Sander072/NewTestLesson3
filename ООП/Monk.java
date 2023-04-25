@@ -1,5 +1,3 @@
-package ООП;
-
 public class Monk extends Hero {
     public Monk( String name, int strength, int health ) {
         super( name, strength, health );

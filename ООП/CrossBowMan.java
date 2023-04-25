@@ -1,5 +1,3 @@
-package ООП;
-
 public class CrossBowMan extends Hero {
     public CrossBowMan( String name, int strength, int health ) {
         super( name, strength, health );

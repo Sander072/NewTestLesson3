@@ -1,7 +1,5 @@
-package ООП;
-
-public class Start {
-    public static void main(String[] args) {
+public class Start1 {
+    public static void main( String[] args ) {
 
         // Крестьянин
         Peasant peasant = new Peasant("John", 5, 100);
@@ -34,6 +32,11 @@ public class Start {
         spearman.brace();
         monk.rest(20);
         monk.heal();
+        monk.step();
+        monk.stepUp();
+        monk.stepDown();
+        monk.stepLeft();
+        monk.stepRight();
 
         System.out.println( "\n" + peasant );
         System.out.println( rogue );
@@ -44,3 +47,4 @@ public class Start {
         System.out.println( monk + "\n" );
     }
 }
+
