@@ -1,91 +1,85 @@
-public abstract class Hero implements Interface {
+import java.util.ArrayList;
+
+public abstract class Hero implements Interface{
     protected String name;
+    protected float maxHp, currentHp, luck, armor;
+    protected int attack;
+    public int speed;
+    protected ArrayList<Hero> team, enemy;
+    protected Coordinate coordinate;
+    
+    
+    
 
-    protected int strength;
-    protected int dexterity;
-    protected int intelligence;
-    protected int endurance;
-
-    protected int health;
-    protected int healthMax;
-
-    public Hero(String name,
-                    int strength, int dexterity, int intelligence, int endurance,
-                    int health, int healthMax) {
-        this.name         = name;
-
-        this.strength     = strength;
-        this.dexterity    = dexterity;
-        this.intelligence = intelligence;
-        this.endurance    = endurance;
-
-        this.health       = health;
-        this.healthMax    = healthMax;
+    Hero(String name, float maxHp, float luck, int speed, int attack, float armor, ArrayList<Hero> team, int x, int y){
+        this.name = name;
+        this.maxHp = maxHp;
+        this.currentHp = maxHp;
+        this.luck = luck;
+        this.speed =speed;
+        this.attack = attack;
+        this.armor = armor;
+        this.team = team;
+        this.coordinate = new Coordinate(x, y);
     }
 
-    public Hero( String name, int strength, int health ) {
-        this(
-            name,
-            strength,
-            0,
-            0,
-            0,
-            health,
-            health );
+    void attack(Hero target){
+        target.getDmage(attack);
+        System.out.println(this.introduce() + " атакует " + target.introduce());
+    }
+    void await(){
+
+    }
+    void defend(){
+
     }
 
-    public Hero() {
-        this( "unknown", 1, 0, 0, 0, 5, 5 );
-    }
-
-
-    @Override
-    public String getName()      { return name; }
-    public int getStrength()     { return strength; }
-    public int getDexterity()    { return dexterity; }
-    public int getIntelligence() { return intelligence; }
-    public int getEndurance()    { return endurance; }
-    public int getHealth()       { return health; }
-    public int getHealthMax()    { return healthMax; }
-
-    public void setName(         String name )      { this.name         = name; }
-    public void setStrength(     int strength )     { this.strength     = strength; }
-    public void setDexterity(    int dexterity )    { this.dexterity    = dexterity; }
-    public void setIntelligence( int intelligence ) { this.intelligence = intelligence; }
-    public void setEndurance(    int endurance )    { this.endurance    = endurance; }
-    public void setHealth(       int health )       { this.health       = health; }
-    public void setHealthMax(    int health )       { this.healthMax    = health; }
-
-
-    public void die() {
-        setHealth( 0 );
-        setHealthMax( 0 );
-    }
-
-    public void takeDamage( int damage ) {
-        if ( this.health > damage ) {
-            this.health -= damage;
-            System.out.println( this.name + " take damage -" + damage + "hp" );
-        } else {
-            this.die();
-            System.out.println( this.name + " has been defeated!" );
+    boolean die(){
+        if (currentHp <= 0) {
+            return true;
+        }else{
+            return false;
         }
     }
 
-    public void attack( Hero target ) {
-        int damage = this.strength * 1;
-        target.takeDamage( damage );
-        System.out.println( this.name + " attacks " + target.getName() + " for " + damage + " damage!" );
-
+    public void getDmage(float damage){
+        this.currentHp -= damage;
+        if (this.currentHp > this.maxHp) {
+            this.currentHp = this.maxHp;
+        }
+        if (this.currentHp < 0) {
+            this.currentHp = 0;
+        }
     }
 
-    public void rest( int hp ) {
-        this.health = this.health + hp > this.healthMax ? this.healthMax : hp + this.health;
-        System.out.println( this.name + " rests and recovers " + hp + " health points." );
+    @Override
+    public String getInfo() {
+        return "[" + name + " " + toString() + "] hp:" + 
+        currentHp + "/" + maxHp + " luck:" + luck 
+        + " speed:" + speed + " attack:" + attack
+        + " armor:" + armor;
     }
 
-    public String toString() {
-        return String.format("-- %s -- %s[%d/%d], Сила: %d --",
-        this.getClass().getName(), this.name, this.health, this.healthMax, this.strength);
+    @Override
+    public void step(ArrayList<Hero> enemy) {
+        System.out.println(getClass().getName());
+    }
+
+    public Hero findNearUnit(ArrayList<Hero> team){
+        Hero nearUnit = null;
+        float minDist = Float.MAX_VALUE;
+        for (Hero unit : team) {
+            float dist = unit.coordinate.distance(this.coordinate);
+            if (minDist > dist) {
+                nearUnit = unit;
+                minDist = dist;
+            }
+        }
+        return nearUnit;
+    }
+
+    @Override
+    public String introduce() {
+        return this + " " + this.name;
     }
 }

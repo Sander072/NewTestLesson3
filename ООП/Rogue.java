@@ -1,21 +1,28 @@
+import java.util.ArrayList;
+
+
 public class Rogue extends Hero {
-    public Rogue( String name, int strength, int health ) {
-        super( name, strength, health );
+
+    public Rogue(String name, ArrayList<Hero> team, int x, int y) {
+        super(name, 20, 0.8f, 3, 2, 10, team, x, y);
+    }
+
+    @Override
+    public String toString() {
+        return "Разбойник";
+    }
+
+    void dodge() {
+
+    }
+
+    void stealth() {
+
     }
 
 
-    public Rogue() {
-        super( "Rogue", 6, 30 );
-    }
-
-
-    public void pickPocket() {
-        System.out.println(this.name + " is picking pockets.");
-    }
-
-    
-    public void sneak() {
-        System.out.println(this.name + " is sneaking around.");
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 }
-

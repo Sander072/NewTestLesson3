@@ -1,17 +1,33 @@
+import java.util.ArrayList;
+
 public class Peasant extends Hero {
-    public Peasant( String name, int strength, int health ) {
-        super( name, strength, health );
+
+    protected boolean readiness;
+
+    public Peasant(String name, ArrayList<Hero> team, int x, int y) {
+        super(name, 10, 0.5f, 1, 1, 0, team, x, y);
+        this.readiness = true;
     }
 
-    public Peasant() {
-        super("Peasant", 1, 30);
+    @Override
+    public String toString() {
+        return "Крестьянин";
     }
 
-    public void plow() {
-        System.out.println(this.name + " is plowing the field.");
+
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
-    public void harvest() {
-        System.out.println(this.name + " is harvesting the crops.");
+    @Override
+    public void step(ArrayList<Hero> enemy) {
+        if (readiness) {
+            System.out.println(this + " " + this.name + " ничего не делает");
+        }else{
+            readiness = true;
+            System.out.println(this + " " + this.name + " находит припасы");
+        }
     }
+
 }

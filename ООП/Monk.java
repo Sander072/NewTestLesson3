@@ -1,20 +1,19 @@
-public class Monk extends Hero {
-    public Monk( String name, int strength, int health ) {
-        super( name, strength, health );
+import java.util.ArrayList;
+
+public class Monk extends Magican {
+
+    public Monk(String name, ArrayList<Hero> team, int x, int y) {
+        super(name, 20, 0.6f, 2, 2, 20, 5, 1, 10, 50, team, x, y);
     }
 
-
-    public Monk() {
-        super( "Monk", 6, 30 );
+    @Override
+    public String toString() {
+        return "Монах";
     }
 
-
-    public void meditate() {
-        System.out.println(this.name + " is meditating.");
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
-
-    public void heal() {
-        System.out.println(this.name + " is using their healing powers.");
-    }
 }

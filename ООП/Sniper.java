@@ -1,20 +1,19 @@
-public class Sniper extends Hero {
-    public Sniper( String name, int strength, int health ) {
-        super( name, strength, health );
+import java.util.ArrayList;
+
+public class Sniper extends Shooter {
+    public Sniper(String name, ArrayList<Hero> team, int x, int y) {
+        super(name, 20, 0.6f, 4, 4, 5, 10, 0.5f, 5, team, x, y);
+    }
+
+    @Override
+    public String toString() {
+        return "Снайпер";
     }
 
 
-    public Sniper() {
-        super( "Sniper", 5, 30 );
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
-
-    public void aim() {
-        System.out.println(this.name + " is aiming the sniper rifle.");
-    }
-
-    
-    public void shoot() {
-        System.out.println(this.name + " is shooting the sniper rifle.");
-    }
 }

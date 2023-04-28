@@ -1,21 +1,20 @@
-public class Warlock extends Hero {
-    public Warlock( String name, int strength, int health ) {
-        super( name, strength, health );
+import java.util.ArrayList;
+
+public class Warlock extends Magican {
+
+    public Warlock(String name, ArrayList<Hero> team, int x, int y) {
+        super(name, 20, 0.7f, 2, 2, 5, 10, 1, 5, 50, team, x, y);
+    }
+
+    @Override
+    public String toString() {
+        return "Маг";
     }
 
 
-    public Warlock() {
-        super( "Warlock", 4, 30 );
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
-
-    public void curse() {
-        System.out.println(this.name + " is cursing the enemy.");
-    }
-
-
-    public void summonDemon() {
-        System.out.println(this.name + " is summoning a demon.");
-    }
 }
-

@@ -1,21 +1,20 @@
+import java.util.ArrayList;
+
 public class SpearMan extends Hero {
-    public SpearMan( String name, int strength, int health ) {
-        super( name, strength, health );
+    public SpearMan(String name, ArrayList<Hero> team,  int x, int y){
+        super(name, 30, 0.6f, 3, 4, 30, team, x, y);
     }
 
-    
-    public SpearMan() {
-        super( "SpearMan", 7, 30 );
-    }
-
-
-    public void brace() {
-        System.out.println(this.name + " is bracing with their spear.");
+    @Override
+    public String toString() {
+        return "Копейщик";
     }
 
 
-    public void thrust() {
-        System.out.println(this.name + " is thrusting their spear.");
+    @Override
+    public String getInfo() { 
+        return super.getInfo();
     }
+
 }
 

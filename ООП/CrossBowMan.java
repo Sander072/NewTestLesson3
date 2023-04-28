@@ -1,20 +1,19 @@
-public class CrossBowMan extends Hero {
-    public CrossBowMan( String name, int strength, int health ) {
-        super( name, strength, health );
+import java.util.ArrayList;
+
+public class CrossBowMan extends Shooter {
+    public CrossBowMan(String name, ArrayList<Hero> team, int x, int y) {
+        super(name, 20, 0.5f, 4, 2, 2, 50, 0.5f, 10, team, x, y);
+    }
+
+    @Override
+    public String toString() {
+        return "Арбалетчик";
     }
 
 
-    public CrossBowMan() {
-        super( "CrossBowMan", 7, 30 );
+    @Override
+    public String getInfo() {
+        return super.getInfo();
     }
 
-
-    public void reload() {
-        System.out.println(this.name + " is reloading their crossbow.");
-    }
-
-
-    public void fire() {
-        System.out.println(this.name + " is firing their crossbow.");
-    }
 }
