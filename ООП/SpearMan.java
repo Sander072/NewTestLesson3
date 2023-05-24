@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class SpearMan extends Hero {
     public SpearMan(String name, ArrayList<Hero> team,  int x, int y){
-        super(name, 30, 0.6f, 3, 4, 30, team, x, y);
+        super(name, 30, 0.6f, 3, 3, 30, team, x, y);
     }
 
     @Override
@@ -15,6 +15,4 @@ public class SpearMan extends Hero {
     public String getInfo() { 
         return super.getInfo();
     }
-
 }
-
